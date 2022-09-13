@@ -3,7 +3,7 @@
 --Orange: hsl(25, 97%, 53%);
 --White: hsl(0, 0%, 100%);
 --Light-Grey: hsl(217, 12%, 63%);
---Medium-Grey: hsl(216, 12%, 54%);
+--Medium-Grey: hsl(213, 20%, 22%);
 --Dark-Blue: hsl(213, 19%, 18%);
 --Very-Dark-Blue: hsl(216, 12%, 8%);
 }
@@ -44,34 +44,45 @@ body{
     gap: 20px;
 }
 .part1 .star{
-    background-color:var(--Very-Dark-Blue);
+    background-color:var(--Medium-Grey);
     width:40px;
     height: 40px;
     text-align: center;
     padding: 10px;
     border-radius: 50%
 }
+.part1 h1{
+   color: var(--White); 
+}
 .part1 .num{
     display: flex;
     justify-content: space-between;
 }
 .num .num1{
-    background-color:var(--Very-Dark-Blue);
+    background-color:var(--Medium-Grey);
     width:40px;
     height: 40px;
     text-align: center;
     padding: 12px;
     border-radius: 50%;
+    cursor: pointer;
+}
+.num1:hover{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+.num .num1:focus{
 }
 .part1 button{
+    background-color: var(--Orange);
     width: 100%;
-    padding: 11px;
+    padding: 8px;
     border-radius: 30px;
-    color:var(--Orange);
+    color:var(--White);
     letter-spacing: 1px;
     font-size: 16px;
     font-weight: 400;
-    border: 1px solid #FFF;
+    border: 1px solid var(--Orange);
 }
 .part2{
     display: flex;
@@ -86,7 +97,7 @@ body{
 .part2 h1{
     font-size: 15px;
     color: var(--Orange);
-    background-color: var(--Very-Dark-Blue);
+    background-color: var(--Medium-Grey);
     padding: 5px 15px;
     
     border-radius: 30px;
@@ -95,4 +106,7 @@ body{
     color: var(--White);
     background-color:var(--Dark-Blue);
     font-size: 22px;
+}
+.hidden{
+    display: none;
 }
