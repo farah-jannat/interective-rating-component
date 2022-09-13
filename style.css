@@ -7,3 +7,50 @@
 --Dark-Blue: hsl(213, 19%, 18%);
 --Very-Dark-Blue: hsl(216, 12%, 8%);
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Overpass',sans-serif;
+    font-size: 15px;
+    background-color: var(--Very-Dark-Blue);
+
+
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-container{
+    background-color: var(--Dark-Blue);
+    padding: 25px;
+
+}
+.part1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.part1 .num{
+    display: flex;
+    justify-content: space-between;
+}
+.num .num1{
+    background-color: var(--Light-Grey);
+    width:40px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+}
+.part1 button{
+    width: 100%;
+    padding: 13px;
+    border-radius: 30px;
+    color: aqua;
+    border: 1px solid #FFF;
+}
