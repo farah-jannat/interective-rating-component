@@ -73,3 +73,26 @@ body{
     font-weight: 400;
     border: 1px solid #FFF;
 }
+.part2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.part2 img{
+    width: 155px;
+}
+.part2 h1{
+    font-size: 15px;
+    color: var(--Orange);
+    background-color: var(--Very-Dark-Blue);
+    padding: 5px 15px;
+    
+    border-radius: 30px;
+}
+.part2 .header{
+    color: var(--White);
+    background-color:var(--Dark-Blue);
+    font-size: 22px;
+}
