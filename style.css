@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700&display=swap');
 :root{
-
+--Orange: hsl(25, 97%, 53%);
 --White: hsl(0, 0%, 100%);
 --Light-Grey: hsl(217, 12%, 63%);
 --Medium-Grey: hsl(216, 12%, 54%);
@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Overpass',sans-serif;
+    font-family: 'Overpass', sans-serif;
     font-size: 15px;
     background-color: var(--Very-Dark-Blue);
 
@@ -28,29 +28,48 @@ body{
 .sub-container{
     background-color: var(--Dark-Blue);
     padding: 25px;
+    width: 360px;
+    border-radius: 25px;
 
+}
+.all-content{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    color: var(--Light-Grey);
 }
 .part1{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+.part1 .star{
+    background-color:var(--Very-Dark-Blue);
+    width:40px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%
+}
 .part1 .num{
     display: flex;
     justify-content: space-between;
 }
 .num .num1{
-    background-color: var(--Light-Grey);
+    background-color:var(--Very-Dark-Blue);
     width:40px;
     height: 40px;
     text-align: center;
-    padding: 10px;
+    padding: 12px;
     border-radius: 50%;
 }
 .part1 button{
     width: 100%;
-    padding: 13px;
+    padding: 11px;
     border-radius: 30px;
-    color: aqua;
+    color:var(--Orange);
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 400;
     border: 1px solid #FFF;
 }
